@@ -1,0 +1,27 @@
+.Title{
+    font-weight: normal;
+    font-weight: 700;
+    composes: raleway from "../../../App.module.css";
+    font-size: 33px;
+    line-height: 45px;
+    color: #474747;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (min-width: 1441px){
+    .Title{
+        font-size: 45px;
+        line-height: 62px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .Title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+}

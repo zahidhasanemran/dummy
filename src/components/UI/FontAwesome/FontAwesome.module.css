@@ -1,0 +1,8 @@
+.defFontAwesome{
+    color: #B3B3B3;
+    transition: color .3s linear;
+    font-size: 22px;
+}
+.defFontAwesome:hover{
+    color: #000;
+}

@@ -1,0 +1,169 @@
+.wrapper{
+    background: #fff;
+}
+.main{
+    display: flex;
+    min-height: 650px;
+}
+.main_right{
+    width: 50%;
+    background-image: url('../../assets/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.main_left p{
+    margin: 40px 0px;
+}
+.main_left{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ul li{
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.ul li:last-child{
+    margin-right: 0;
+}
+.subtitle{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #474747;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 20px 0px 10px 0px;
+    composes: raleway from "../../App.module.css";
+}
+
+.footer{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.footer_left{
+    width: 50%;
+}
+.footer_left ul{
+    display: flex;
+    align-items: center;
+}
+.footer_left ul li {}
+.footer_left ul li a{
+    display: block;
+    padding: 10px 15px;
+}
+
+.footer_right{
+    width: 50%;
+}
+.footer_right p{
+    text-align: right;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 39px;
+    color: #b3b3b3;
+}
+
+
+
+
+
+@media screen and (min-width: 1900px){
+    .main{
+        min-height: 900px;
+    }
+    
+}
+
+@media screen and (min-width: 1441px){
+    .main{
+        min-height: 800px;
+    }
+    .main_left{
+        padding: 0 100px;
+    }
+    .ul li{
+        margin-right: 20px;
+    }
+    .subtitle{
+        font-size: 18px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .main_left,
+    .main_right{
+        width: 100%;
+    }
+    .main_right{
+        height: 400px;
+    }
+    .main_left{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .ul{
+        justify-content: center;
+    }
+    .footer{
+        display: block;
+    }
+    .footer_left,
+    .footer_right{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 425px){
+    .main_left{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .ul{
+        display: block;
+    }
+    .ul li{
+        margin-right: 0;
+    }
+    .ul li a{
+        min-width: 100%;
+        width: 100%;
+        display: block;
+        line-height: 15px;
+    }
+    .main_right{
+        height: 300px;
+    }
+    .footer_right p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main_right{
+        height: 200px;
+    }
+}
